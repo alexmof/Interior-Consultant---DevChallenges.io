@@ -4,43 +4,97 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Interior Consultant</title>
+
+  <link rel="stylesheet" href="all.css" media="all">
+  <link rel="stylesheet" href="landscape.css" media="screen and (orientation: landscape)">
+  <link rel="stylesheet" href="portrait.css" media="screen and (orientation: portrait)">
   <link rel="shortcut icon" href="devchallenges.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css" media="screen and (orientation: landscape)">
 </head>
 <body>
 
-  <header>This Interior</header>
+  <div class="top">
+    <header>This Interior</header>
 
-  <ul>
-    <li>Home</li>
-    <li>Collection</li>
-    <li>About</li>
-    <li>Contact</li>
-  </ul>
+    <nav>
+      <ul id="menu">
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Collection</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">About</a></li>
+        <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
+      </ul>
+      <div  class="sandwich-menu" onclick="clickMenu()">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div>
+      <div id="exitButton" class="exit-menu" onclick="clickExit()">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div class="bottom-left"></div>
+        <div class="bottom-right"></div>
+      </div>
+    </nav>
+    
+  </div>
 
-  <h1>Modern interior</h1>
-  <p>A full-Service residential & commercial interior 
-    design and staging company offering professional 
-    organizing & eco-services.
-  </p>
+  <div class="desc-imgBy">
+    <div class="description">
+      <h1>Modern interior</h1>
+      <p class="main-text">A full-Service residential & commercial interior 
+        design and staging company offering professional 
+        organizing & eco-services.
+      </p>
 
-  <button disabled="disabled">Read more</button>
+      <div class="read-more">
+        <a href="http://" target="_blank" rel="noopener noreferrer">
+          Read more
+        </a>
+        <div class="arrow">
+          <div class="stick"></div>
+          <div class="tip"></div>
+        </div>
+      </div>
+    </div>
 
-  <picture>
-    <source media="(max-width: 750px)" srcset="photo1P.png" type="image/png">
-    <img src="photo1M.png" alt="Sala de estar belamente decorada com quadro em tons de amarelo.">
-  </picture>
+    <div class="img-by">
+      <picture>
+        <source media="(max-width: 812px)" srcset="assets/photo1P.png" type="image/png">
+        <img class="project-photo" src="assets/photo1G.png" alt="Sala de estar belamente decorada com quadro em tons de amarelo.">
+      </picture>
 
-  <picture>
-    <source media="(max-width: 750px)" srcset="photo2P.png" type="image/png">
-    <img src="photo2M.png" alt="Retrato de uma mulher loira.">
-  </picture>
+      <div class="by">
+        <div class="who">
+          <picture>
+            <source media="(max-width: 750px)" srcset="assets/photo2P.png" type="image/png">
+            <img class="person" src="assets/photo2M.png" alt="Retrato de uma mulher loira.">
+          </picture>
+          
+          <div class="name-function">
+            <p class="name">Aliza Webber</p>
+            <p class="function">Interior designer</p>
+          </div>
+        </div>
 
-  <p>Aliza Webber</p>
-  <p>Interior designer</p>
-  <p>Designed in 2020 by Aliza Webber<p>
+        <p class="by-desc">Designed in 2020 by Aliza Webber<p>
+      </div>
+    </div>
+  </div>
 
   <footer>created by <u>alexmof</u> - devChallenges.io</footer>
+
+  <script>
+    function clickMenu() {
+      menu.style.left = "0vw"
+      exitButton.style.display = "grid"
+    }
+
+    function clickExit() {
+      exitButton.style.display = "none"
+      menu. style.left = "100vw"
+    }
+  </script>
 </body>
 </html>
