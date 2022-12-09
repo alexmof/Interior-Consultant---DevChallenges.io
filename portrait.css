@@ -87,7 +87,8 @@ nav {
 
 .desc-imgBy {
     margin-top: 4.90vh;
-    margin-left: 3.20vw;
+    max-width: 351px;
+    /*margin-left: 3.20vw;*/
 }
 
 h1 {
@@ -95,6 +96,7 @@ h1 {
 }
 
 .main-text {
+    max-width: 351px;
     width: 66.67vw;
     font-size: 14px;
     line-height: 17px;

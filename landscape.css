@@ -5,8 +5,7 @@
     justify-content: space-between;
     height: 21px;
     margin-top: 4.26vh;
-    margin-left: 5.35vw;
-    margin-right: 5.35vw;
+    max-width: 1214px;
 }
 
 ul {
@@ -23,13 +22,14 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1vw;
     margin-top: 16.39vh;
-    margin-left: 7vw;
-    margin-right: 7vw;
+    max-width: 1214px;
 }
 
 .main-text {
     width: 28.47vw;
+    max-width: 440px;
     font-size: 24px;
 }
 

@@ -10,6 +10,11 @@ body {
     margin: 0px;
 }
 
+.top {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
     font-family: 'Crimson Pro', serif;
     font-size: 14px;
@@ -58,6 +63,11 @@ li:hover:before {
 
 .exit-menu {
     font-family: 'Montserrat', sans-serif;
+}
+
+.desc-imgBy {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
